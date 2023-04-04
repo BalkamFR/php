@@ -1,5 +1,7 @@
 <?php 
 
-    class PersonnageController()
+    class PersonnageController(){
+        
+    }
 
 ?>
