@@ -57,6 +57,10 @@ class Personnage(){
         $this->$niveau = $setNiveau;
     }
 
+
+    public function attack(){
+        
+    }
     
 
 
