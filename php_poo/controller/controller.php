@@ -20,6 +20,20 @@
               'niveau'=>$niveau,
           ]);
         }
+
+        public function attaquer(Personnage $p1, Personnage $p2){
+            $force = $p1->getForce();
+            $pv = $p2->getPv();
+            $nomP2 = $p2->$nom;
+            $alea = random_int(0,5);
+            $degat = $force + $alea;
+            $pv = $pv - $degat;
+            $p2->updatePv($nomP2);
+        }
+
+        public function defendre(){
+            
+        }
     }
 
 ?>
