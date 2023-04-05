@@ -56,6 +56,14 @@ class Personnage(){
     public function setForce($setNiveau){
         $this->$niveau = $setNiveau;
     }
+<<<<<<< HEAD
+=======
+
+
+    public function attack(){
+        
+    }
+>>>>>>> 441ad8410ad7dcf171ada18972cac705812ea1c5
     
 
 }
