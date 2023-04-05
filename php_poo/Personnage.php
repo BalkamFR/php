@@ -56,7 +56,7 @@ class Personnage(){
     public function setForce($setNiveau){
         $this->$niveau = $setNiveau;
     }
-    
+
 
 }
 
