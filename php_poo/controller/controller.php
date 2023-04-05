@@ -12,6 +12,14 @@
             PersonnageVue $vue = new PersonnageVue($listePerso);
             $vue->afficher();
         }
+
+        public function attaquer(){
+
+        }
+
+        public function defendre(){
+            
+        }
     }
 
 ?>
