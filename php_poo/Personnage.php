@@ -57,11 +57,14 @@ class Personnage(){
         $this->$niveau = $setNiveau;
     }
 
-
-    public function attack(){
-        
+    public function updatePv($nomP, $pv){
+        $bdd = new PDO("mysql:host=localhost;dbname=jeu","root","");
+        $requete = $bdd->prepare("UPDATE personnage SET pv = :pv WHERE nom = :nom");
+        $requete->bindParam(":pv",$pv);
+        $requete->bindParam(":nom",$nomP);
+        $requete->execute();
     }
-    
+
 
 
 
